@@ -1,0 +1,58 @@
+ <div class="container">
+        <nav class="nav">
+           
+                <div class="nav_left">
+                    <ul>
+  <li><a href="">MI INDIA</a>
+    <li class="liner"></li>
+</li>
+
+  <li><a href="">GET MI STORE APP</a>
+ <li class="liner"></li>
+ </li>
+
+  <li><a href="">ONLINE HELP</a>
+ <li class="liner"></li>
+ </li>
+
+  <li><a href="">RETAIL STORE</a>
+ <!-- <li class="liner"></li> -->
+</li>
+
+  <!-- <li><a href="">REDMI NOTE CHALLENGES</a>
+     <li class="liner"></li>
+  </li> -->
+              </ul>
+  </div>
+
+  <div class="nav_right">
+      <ul>
+        <%if(checkLogin1.Email !== undefined){%>
+           <li class="loginDivBox">  
+              <p id="loginId"><%= checkLogin1.Email%> <br> </p>
+              <p id="logoutId"> <a href="/logout">Logout</a></p>
+           </li>
+            <li class="liner"></li>
+            <li><a href="/cart">CART<div id="sum1"><%= sum1%></div></a></li>
+       <%} else {%>   
+         <li><a href="/login">SIGN IN</a>
+         <li class="liner"></li>
+         </li>
+
+         <li><a href="/signup">SIGN UP</a>
+         <li class="liner"></li>
+       </li>
+       <li><a onclick="alert('Please Login/SignUp') " href="/signup">CART</a></li>
+       <%} %>
+      </ul>
+  </div>
+
+       
+    </div>
+
+
+
+    
+           
+            
+            

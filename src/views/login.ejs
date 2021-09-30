@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    <% if(message.length > 0){%>
+            <div class="alertMessage">
+                <h2><%= message%></h2>
+            </div>
+        <%}%>
+        <div id="parent">
+            <div>
+                <button class="btn"> <a href="/" style="text-decoration: none;"><i class="fa fa-close"></i></a></button>
+            </div>
+        <div id="container">
+                <div class="signup">
+                <h2>Login</h2>
+                </div>
+                <div id="inputfield">
+                <form id="form" action="/login/post" method="POST" >
+                    <input type="number"id="mobile" name="Mobile" placeholder="Enter Your Mobile No." required
+                    maxlength="10"
+                    oninput=" if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
+                    >
+                    <input type="password" id="password" name="Password"  placeholder="Enter your password"
+                    minlength="8"
+                    required>
+                    <input  type="submit" class="fwb" value="&#8594;"/>
+                </form>
+                </div>
+                    <p class="newuser">New customer? click here to <a href="/signup">SignUp</a></p>
+            
+        </div>
+        </div>
+</body>
+</html>

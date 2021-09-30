@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi India</title>
+    <link rel="stylesheet" href="/static/navbar.css"/>
+</head>
+<body>
+<!--        Navbar   -->
+
+    <%- include("./navbar.ejs")%>
+    <div class="items_grid">
+        <% products.forEach(({name,description,image,price,_id}) =>{ %>
+           <div class="item"> 
+            <div><img src="<%=image%>"></img></div>
+            <div><%= name%></div>
+            <div><%= description%></div>
+            <div><%= price%></div>
+            <div><a href="/cart/:<%=_id%>" onclick= 
+                "alert('Product added to cart successfully')">
+                <button id="addToCart"> ADD TO CART</button></a></div>
+           </div> 
+        <%})%>
+    </div>
+</body>
+</html>
