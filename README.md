@@ -30,7 +30,7 @@ To run the React project.
 $ npm run server
 
 ### Problems Faced
-    I need to complete this project within 4 days. So I focused on functionalities rather than its views.
+I need to complete this project within 4 days. So I focused on functionalities rather than its views.
 
 ## Authors
   Sameel Paikadan
