@@ -1,4 +1,4 @@
-# MI XIOMI CLONE
+# MI XIAOMI CLONE
 
 This is a clone of the MI website, this project has been done in order to learn the basic working of a MERN stack by implementing HTML5, CSS3, MongoDB, Express, Node,Atlas. Working on this project helps to learn a lot of new things that goes into building a basic Login of the site.This is my first individual  project under the guidance of MASAI Team to facilitate the full stack web development curriculam.
 
